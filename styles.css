@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    height: 100vh;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: rgb(65, 129, 65);
+    
+}
+
+.login{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    width: 20%;
+
+}
+
+.login label{
+    display: block;
+}
+
+.login input{
+    padding: 10px;
+    width: 100%;
+}
+button{
+    cursor: pointer;
+}
+button:active{ /*quando botão for clicado, acontecerá tal coisa*/
+opacity: 0.8;
+}
+.login button{
+    padding: 10px;
+    width: 100%;
+}
+
+.b2{
+    background-color: #fff;
+    color: rgb(65, 129, 65);
+    border: none;
+
+}
+
+.b1{
+    background-color: rgb(65, 129, 65);
+    color: #fff;
+    border: none;
+
+}
+
+.b3{
+    background-color: rgb(65, 129, 65);
+    border: 1px solid white;
+    color: #fff;
+}
+
+#recover-password-button:disabled {/*quando o recover..... estiver desabilitado, aplique isso*/
+
+    pointer-events: none;/*faz com que o botao nao possa ser clicado nem interaja com eventos de mouse*/
+}
+
+.b2:disabled{
+    pointer-events: none;
+}
+
+.b3:disabled{
+    pointer-events: none;
+}
