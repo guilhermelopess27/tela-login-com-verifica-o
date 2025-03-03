@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+   <form action="#" class="login"id='login-form'>
+    <div>
+        <label>Email</label>
+        <input type="email" name="email" id='email' oninput="validateFields()" placeholder="seu@email.com">    
+        <!--oninput siginifica que sempre que houver alteração no campo de email, a função validate sera acionada-->
+</div>
+
+<div>
+    <label>Senha</label>
+    <input type="password" name="senha"oninput="validateFields()" placeholder="digite sua senha" id="password">
+    <a href="#">Esqueci minha senha</a>
+</div>
+
+<div>
+    <button type="submit" class="b1" id='recover-password-button' disabled>Recuperar senha</button>
+</div>
+
+<div>
+    <button type="submit" class="b2"  id="login-button" disabled>Entrar</button>
+</div>
+
+<div>
+    <button type="submit" class="b3" id="register-button" disabled>Registrar</button>
+</div>
+
+   </form>
+</body>
+<script src="index.js"></script>
+</html>
